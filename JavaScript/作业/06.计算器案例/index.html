@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num_one = +prompt("请输入第一个数字")
+        let num_two = +prompt("请输入第二个数字")
+        let result = prompt("请输入你需要使用的算式运算符！")
+        switch(result){
+            case '+':
+                alert(`两个数相加的结果是${num_one + num_two}`)
+            break
+            case '-':
+                alert(`两个数相减的结果是${num_one - num_two}`)
+            break
+            case '*':
+                alert(`两个数相乘的结果是${num_one * num_two}`)
+            break
+            case '/':
+                alert(`两个数相除的结果是${num_one / num_two}`)
+            break
+            default: 
+              alert("你干嘛~捣乱是吧，让你输入+-*/，你输入的什么！")
+        }
+    </script>
+</body>
+</html>
