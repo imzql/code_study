@@ -46,12 +46,40 @@
         //      i++
         //      result++
         // }
-        let i = 1
-        let result = 0
-        while (i <= 100) {
-            result = i + result
-            i++
-            document.write(`${result}<br>`)
+        // let i = 1
+        // let result = 0
+        // while (i <= 100) {
+        //     result = i + result
+        //     i++
+        //     document.write(`${result}<br>`)
+        // }
+        // while(true){
+        //     let str = prompt('如果我是DJ，你会爱我吗?')
+        //     if (str === "爱"){
+        //         break
+        //     }
+        // }
+        while (true) {
+            let input = prompt(`输入你想执行的操作1.存钱<br>2.取钱<br>3.查看余额<br>4.退出`)
+            let rmb = 0
+            switch (input) {
+                case '1':
+                  let num = +prompt('请输入您想输入的金额')
+                  rmb= num +rmb
+                  alert(`您的目前的余额是${rmb}`)
+                  break
+                  case '2':
+                  let num2 = +prompt('请输入您想输入的金额')
+                  rmb= rmb-num2
+                  alert(`您的金额是${rmb}`)
+                  break
+                  case '3':
+                  alert(`您的金额是${rmb}`)
+                  break
+                  case '4':
+                    break
+            }
+            break
         }
     </script>
 </body>
